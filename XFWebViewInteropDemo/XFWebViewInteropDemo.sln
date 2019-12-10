@@ -99,9 +99,9 @@ Global
 		{ACED4C2C-A413-46B5-B32F-F2285D56A471}.Release|x86.ActiveCfg = Release|Any CPU
 		{ACED4C2C-A413-46B5-B32F-F2285D56A471}.Release|x86.Build.0 = Release|Any CPU
 		{ACED4C2C-A413-46B5-B32F-F2285D56A471}.Release|x86.Deploy.0 = Release|Any CPU
-		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|Any CPU.Build.0 = Debug|iPhone
-		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|Any CPU.Deploy.0 = Debug|iPhone
+		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
 		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|ARM.ActiveCfg = Debug|iPhoneSimulator
 		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|ARM.Build.0 = Debug|iPhoneSimulator
 		{EEA8B41F-3DE8-4A5F-A509-897883623D86}.Debug|ARM.Deploy.0 = Debug|iPhoneSimulator
