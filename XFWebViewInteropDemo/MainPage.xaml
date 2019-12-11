@@ -13,26 +13,25 @@
     <StackLayout Padding="10,10,10,10">
 
         <!--  Place new controls here  -->
-        <Label Text="Welcome to Xamarin.Forms!" />
-
-        <Entry
-            x:Name="textEntryElement"
-            FontSize="25"
-            Placeholder="type something here..."
-            TextChanged="textEntryElement_OnTextChanged" />
+        <Label
+            HorizontalOptions="Center"
+            Text="Welcome to Xamarin.Forms!"
+            VerticalOptions="StartAndExpand" />
 
         <Button
-            x:Name="ButtonSwitchHtml"
+            x:Name="GoToDefaultWebViewButton"
             BackgroundColor="#2196F3"
-            Clicked="ButtonSwitchHtml_Clicked"
-            Text="Switch Html"
-            TextColor="White" />
-
-        <WebView
-            x:Name="webViewElement"
-            HorizontalOptions="FillAndExpand"
-            VerticalOptions="FillAndExpand" />
-
+            Clicked="GoToDefaultWebViewButton_OnClicked"
+            Text="Go to WebView Interop Demo"
+            TextColor="White"
+            VerticalOptions="End" />
+        <Button
+            x:Name="GoToHybridWebViewButton"
+            BackgroundColor="#2196F3"
+            Clicked="GoToHybridWebViewButton_OnClicked"
+            Text="Go to Hybrid WebView Interop Demo"
+            TextColor="White"
+            VerticalOptions="End" />
     </StackLayout>
 
 </ContentPage>
