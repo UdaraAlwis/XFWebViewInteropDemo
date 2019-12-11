@@ -10,11 +10,38 @@
     iOsSpecific:Page.UseSafeArea="true"
     mc:Ignorable="d">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="10,10,10,10">
+            <!--  Place new controls here  -->
             <Label
-                HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" />
+                FontSize="Medium"
+                Text="Uni-directional communication from Xamarin.Forms to WebView interoperability..."
+                VerticalOptions="Start" />
+
+            <Entry
+                x:Name="textEntryElement"
+                FontSize="25"
+                Placeholder="type something here..."
+                VerticalOptions="Start" />
+            <Button
+                x:Name="sendToWebViewButton"
+                BackgroundColor="#2196F3"
+                Clicked="sendToWebViewButton_Clicked"
+                FontSize="Medium"
+                Text="Send to WebView"
+                TextColor="White"
+                VerticalOptions="Start" />
+
+            <WebView
+                x:Name="webViewElement"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" />
+
+            <Label
+                x:Name="textFromWebViewLabel"
+                FontSize="Medium"
+                Text="Sorry not bi-directional... Try for a Hybrid-WebView may be?"
+                VerticalOptions="End" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

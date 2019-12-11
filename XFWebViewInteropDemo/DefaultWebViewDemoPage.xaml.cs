@@ -40,7 +40,7 @@ namespace XFWebViewInteropDemo
 
                     "<body style=\"background-color: #d4ecff;padding: 20px; border: 1px solid #2196F3;border-radius: 5px;\">" +
                         "<div>" +
-                            "<p class=\"h4\">This is a simple bootstrap based HTML Webpage!</p><br />" +
+                            "<p class=\"h4\">This is a simple bootstrap based HTML Web page!</p><br />" +
                             "<div id=\"textElement\" class=\"shadow p-3 mb-5 bg-white rounded\">" +
                                 "<span class=\"spinner-grow spinner-grow-sm\" role=\"status\" aria-hidden=\"true\" ></span>" +
                                 "  waiting for data from Xamarin.Forms..." +

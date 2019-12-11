@@ -16,5 +16,10 @@ namespace XFWebViewInteropDemo
         {
             InitializeComponent();
         }
+
+        private void sendToWebViewButton_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
