@@ -69,7 +69,10 @@ namespace XFWebViewInteropDemo
 
         private async void sendToWebViewButton_Clicked(object sender, EventArgs e)
         {
-            string result = await webViewElement.EvaluateJavaScriptAsync($"updatetextonwebview('{textEntryElement.Text}')");
+            if (!string.IsNullOrWhiteSpace(textEntryElement.Text))
+            {
+                string result = await webViewElement.EvaluateJavaScriptAsync($"updatetextonwebview('{textEntryElement.Text}')");
+            }
         }
     }
 }
