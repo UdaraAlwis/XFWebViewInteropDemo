@@ -39,7 +39,7 @@
             <Label
                 x:Name="textFromWebViewLabel"
                 FontSize="Medium"
-                Text="Sorry not bi-directional... Try for a Hybrid-WebView may be?"
+                Text="waiting for data from WebView..."
                 VerticalOptions="End" />
 
         </StackLayout>
