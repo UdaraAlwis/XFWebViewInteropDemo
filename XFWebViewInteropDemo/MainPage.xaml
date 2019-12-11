@@ -14,7 +14,7 @@
 
         <!--  Place new controls here  -->
         <Label
-            HorizontalOptions="Center"
+            HorizontalOptions="Start"
             Text="Welcome to Xamarin.Forms!"
             VerticalOptions="StartAndExpand" />
 

@@ -39,7 +39,7 @@
             <Label
                 x:Name="textFromWebViewLabel"
                 FontSize="Medium"
-                Text="waiting for data from WebView..."
+                Text="Waiting for data from WebView..."
                 VerticalOptions="End" />
 
         </StackLayout>

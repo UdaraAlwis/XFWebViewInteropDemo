@@ -52,7 +52,7 @@ namespace XFWebViewInteropDemo
                             "<p class=\"h4\">This is a simple bootstrap based HTML Web page!</p><br />" +
                             "<div id=\"textElement\" class=\"shadow p-3 mb-5 bg-white rounded\">" +
                                 "<span class=\"spinner-grow spinner-grow-sm\" role=\"status\" aria-hidden=\"true\" ></span>" +
-                                "  waiting for data from Xamarin.Forms..." +
+                                "  Waiting for data from Xamarin.Forms..." +
                             "</div>" +
                         "</div>" +
                         "<div class=\"form-group\">" +
