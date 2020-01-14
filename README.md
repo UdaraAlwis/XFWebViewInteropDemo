@@ -3,7 +3,7 @@ Here I'm demonstrating how to build a bi-directional communication bridge betwee
 
 WebView Interop Demo
 
-<img src="/screenshots/XFWebViewInteropIos.gif" height="300"/> <img src="/screenshots/XFWebViewInteropAndroid.gif" height="300"/>
+<img src="/screenshots/XFWebViewInteropIos.gif" height="300"/> <img src="/screenshots/XFWebViewInteropAndroid.gif" height="300"/> <img src="/screenshots/XFWebViewInteropWindows.gif" height="300"/>
 
 
 Hybrid WebView Interop Demo
