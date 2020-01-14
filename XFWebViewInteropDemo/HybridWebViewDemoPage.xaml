@@ -3,6 +3,7 @@
     x:Class="XFWebViewInteropDemo.HybridWebViewDemoPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XFWebViewInteropDemo.Controls;assembly=XFWebViewInteropDemo"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -31,16 +32,22 @@
                 TextColor="White"
                 VerticalOptions="Start" />
 
-            <WebView
+            <controls:HybridWebView
                 x:Name="webViewElement"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand" />
 
-            <Label
-                x:Name="textFromWebViewLabel"
-                FontSize="Medium"
-                Text="Waiting for data from WebView..."
-                VerticalOptions="End" />
+            <Frame
+                BackgroundColor="#2196F3"
+                HasShadow="False"
+                VerticalOptions="End">
+                <Label
+                    x:Name="textFromWebViewLabel"
+                    FontSize="Medium"
+                    Text="Waiting for data from WebView..."
+                    TextColor="White"
+                    VerticalOptions="End" />
+            </Frame>
 
         </StackLayout>
     </ContentPage.Content>

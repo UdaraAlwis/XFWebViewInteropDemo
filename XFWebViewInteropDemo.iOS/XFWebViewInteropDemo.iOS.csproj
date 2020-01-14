@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\HybridWebViewRenderer.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,4 +131,5 @@
       <Name>XFWebViewInteropDemo</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
 </Project>

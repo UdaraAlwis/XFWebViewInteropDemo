@@ -37,7 +37,7 @@ namespace XFWebViewInteropDemo
                             "}" +
                             "function invokexamarinforms(){" +
                             "    try{" +
-                            "        var inputvalue = document.getElementById(\"textElement\").value;" +
+                            "        var inputvalue = document.getElementById(\"textInputElement\").value;" +
                             "        invokeCSharpAction(inputvalue + '. This is from Javascript in the WebView!');" +
                             "    }" +
                             "    catch(err){" +
@@ -56,7 +56,7 @@ namespace XFWebViewInteropDemo
                             "</div>" +
                         "</div>" +
                         "<div class=\"form-group\">" +
-                            "<input type=\"text\" class=\"form-control\" id=\"textElement\" placeholder=\"type something here...\">" +
+                            "<input type=\"text\" class=\"form-control\" id=\"textInputElement\" placeholder=\"type something here...\">" +
                         "</div>" +
                         "<div class=\"form-group\">" +
                             "<button type=\"button\" class=\"btn btn-primary mb-2\" onclick=\"invokexamarinforms()\">Send to Xamarin.Forms</button>" +
@@ -65,6 +65,16 @@ namespace XFWebViewInteropDemo
 
                     "</html>"
             };
+
+            webViewElement.RegisterAction(DispatchAction);
+        }
+
+        private void DispatchAction(string data)
+        {
+            Device.InvokeOnMainThreadAsync(() =>
+            {
+                textFromWebViewLabel.Text = data;
+            });
         }
 
         private async void sendToWebViewButton_Clicked(object sender, EventArgs e)

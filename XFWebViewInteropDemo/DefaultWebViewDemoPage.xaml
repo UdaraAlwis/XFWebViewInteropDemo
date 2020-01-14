@@ -37,10 +37,15 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand" />
 
-            <Label
-                FontSize="Medium"
-                Text="Sorry not bi-directional... Try for a Hybrid-WebView may be?"
-                VerticalOptions="End" />
+            <Frame
+                BackgroundColor="#2196F3"
+                HasShadow="False"
+                VerticalOptions="End">
+                <Label
+                    FontSize="Medium"
+                    Text="Sorry not bi-directional... Try for a Hybrid-WebView may be?"
+                    TextColor="White" />
+            </Frame>
 
         </StackLayout>
     </ContentPage.Content>
