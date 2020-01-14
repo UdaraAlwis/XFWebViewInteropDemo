@@ -8,5 +8,5 @@ WebView Interop Demo
 
 Hybrid WebView Interop Demo
 
-<img src="/screenshots/XFHybridWebViewInteropIos.gif" height="300"/> <img src="/screenshots/XFHybridWebViewInteropAndroid.gif" height="300"/>
+<img src="/screenshots/XFHybridWebViewInteropIos.gif" height="300"/> <img src="/screenshots/XFHybridWebViewInteropAndroid.gif" height="300"/> <img src="/screenshots/XFHybridWebViewInteropWindows.gif" height="300"/>
 
