@@ -11,7 +11,7 @@ namespace XFWebViewInteropDemo.iOS.Renderers
     public class HybridWebViewRenderer : WkWebViewRenderer, IWKScriptMessageHandler
     {
         private const string JavaScriptFunction = "function invokeCSharpAction(data){window.webkit.messageHandlers.invokeAction.postMessage(data);}";
-        WKUserContentController userController;
+        private WKUserContentController _userController;
 
         public HybridWebViewRenderer() : this(new WKWebViewConfiguration())
         {
@@ -19,10 +19,10 @@ namespace XFWebViewInteropDemo.iOS.Renderers
 
         public HybridWebViewRenderer(WKWebViewConfiguration config) : base(config)
         {
-            userController = config.UserContentController;
+            _userController = config.UserContentController;
             var script = new WKUserScript(new NSString(JavaScriptFunction), WKUserScriptInjectionTime.AtDocumentEnd, false);
-            userController.AddUserScript(script);
-            userController.AddScriptMessageHandler(this, "invokeAction");
+            _userController.AddUserScript(script);
+            _userController.AddScriptMessageHandler(this, "invokeAction");
         }
 
         protected override void OnElementChanged(VisualElementChangedEventArgs e)
@@ -31,8 +31,8 @@ namespace XFWebViewInteropDemo.iOS.Renderers
 
             if (e.OldElement != null)
             {
-                userController.RemoveAllUserScripts();
-                userController.RemoveScriptMessageHandler("invokeAction");
+                _userController.RemoveAllUserScripts();
+                _userController.RemoveScriptMessageHandler("invokeAction");
                 HybridWebView hybridWebViewMain = e.OldElement as HybridWebView;
                 hybridWebViewMain?.Cleanup();
             }
