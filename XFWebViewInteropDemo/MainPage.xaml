@@ -32,6 +32,13 @@
             Text="Go to Hybrid WebView Interop Demo"
             TextColor="White"
             VerticalOptions="End" />
+        <Button
+            x:Name="GoToHybridWebViewChatButton"
+            BackgroundColor="#2196F3"
+            Clicked="GoToHybridWebViewChatButton_Clicked"
+            Text="Go to Hybrid WebView Chat Demo"
+            TextColor="White"
+            VerticalOptions="End" />
     </StackLayout>
 
 </ContentPage>

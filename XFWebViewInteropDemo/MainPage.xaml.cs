@@ -27,5 +27,10 @@ namespace XFWebViewInteropDemo
         {
             await Navigation.PushAsync(new HybridWebViewDemoPage());
         }
+
+        private async void GoToHybridWebViewChatButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new HybridWebViewChatDemoPage());
+        }
     }
 }
