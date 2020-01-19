@@ -11,7 +11,7 @@ namespace XFWebViewInteropDemo.UWP.Renderers
 {
     public class HybridWebViewRenderer : WebViewRenderer
     {
-        const string JavaScriptFunction = "function invokeCSharpAction(data){window.external.notify(data);}";
+        private const string JavaScriptFunction = "function invokeCSharpAction(data){window.external.notify(data);}";
 
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.WebView> e)
         {

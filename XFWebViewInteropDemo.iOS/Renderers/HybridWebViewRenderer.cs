@@ -10,7 +10,7 @@ namespace XFWebViewInteropDemo.iOS.Renderers
 {
     public class HybridWebViewRenderer : WkWebViewRenderer, IWKScriptMessageHandler
     {
-        const string JavaScriptFunction = "function invokeCSharpAction(data){window.webkit.messageHandlers.invokeAction.postMessage(data);}";
+        private const string JavaScriptFunction = "function invokeCSharpAction(data){window.webkit.messageHandlers.invokeAction.postMessage(data);}";
         WKUserContentController userController;
 
         public HybridWebViewRenderer() : this(new WKWebViewConfiguration())
