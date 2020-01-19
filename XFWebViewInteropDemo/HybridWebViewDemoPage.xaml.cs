@@ -66,10 +66,10 @@ namespace XFWebViewInteropDemo
                     "</html>"
             };
 
-            webViewElement.RegisterAction(DispatchAction);
+            webViewElement.RegisterAction(DisplayDataFromJavascript);
         }
 
-        private void DispatchAction(string data)
+        private void DisplayDataFromJavascript(string data)
         {
             Device.InvokeOnMainThreadAsync(() =>
             {

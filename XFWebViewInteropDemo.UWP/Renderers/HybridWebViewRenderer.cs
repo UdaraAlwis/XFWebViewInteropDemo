@@ -31,7 +31,7 @@ namespace XFWebViewInteropDemo.UWP.Renderers
             }
         }
 
-        async void OnWebViewNavigationCompleted(Windows.UI.Xaml.Controls.WebView sender, WebViewNavigationCompletedEventArgs args)
+        private async void OnWebViewNavigationCompleted(Windows.UI.Xaml.Controls.WebView sender, WebViewNavigationCompletedEventArgs args)
         {
             if (args.IsSuccess)
             {
@@ -40,7 +40,7 @@ namespace XFWebViewInteropDemo.UWP.Renderers
             }
         }
 
-        void OnWebViewScriptNotify(object sender, NotifyEventArgs e)
+        private void OnWebViewScriptNotify(object sender, NotifyEventArgs e)
         {
             ((HybridWebView)Element).InvokeAction(e.Value);
         }
