@@ -50,7 +50,7 @@ namespace XFWebViewInteropDemo
                         "<div>" +
                             "<p class=\"h4\">This is a HTML Web page!</p>" +
                         "</div>"+
-                        "<div class=\"fixed-bottom\" style=\"padding: 20px;\" >" +
+                        "<div>" +
                             "<div class=\"form-group\">" +
                                 "<input type=\"text\" class=\"form-control form-control-lg\" id=\"textInputElement\" placeholder=\"type something here...\">" +
                             "</div>" +
