@@ -38,7 +38,7 @@ namespace XFWebViewInteropDemo
                             "function invokexamarinforms(){" +
                             "    try{" +
                             "        var inputvalue = document.getElementById(\"textInputElement\").value;" +
-                            "        invokeCSharpAction(inputvalue + '. This is from Javascript in the WebView!');" +
+                            "        invokeCSharpAction(inputvalue);" +
                             "    }" +
                             "    catch(err){" +
                             "        alert(err);" +
@@ -46,20 +46,18 @@ namespace XFWebViewInteropDemo
                             "}" +
                         "</script>" +
                     "</head>" +
-
                     "<body style=\"background-color: #d4ecff;padding: 20px; border: 1px solid #2196F3;border-radius: 5px;\">" +
                         "<div>" +
-                            "<p class=\"h4\">This is a simple bootstrap based HTML Web page!</p><br />" +
-                            "<div id=\"textElement\" class=\"shadow p-3 mb-5 bg-white rounded\">" +
-                                "<span class=\"spinner-grow spinner-grow-sm\" role=\"status\" aria-hidden=\"true\" ></span>" +
-                                "  Waiting for data from Xamarin.Forms..." +
+                            "<p class=\"h4\">This is a HTML Web page!</p>" +
+                            "<h1 style=\"font-size: 2.5rem;\" class=\"display-4\" id=\"textElement\" >Waiting for data from Xamarin.Forms...</h1>" +
+                        "</div>" +
+                        "<div class=\"fixed-bottom\" style=\"padding: 20px;\" >" +
+                            "<div class=\"form-group\">" +
+                                "<input type=\"text\" class=\"form-control form-control-lg\" id=\"textInputElement\" placeholder=\"type something here...\">" +
                             "</div>" +
-                        "</div>" +
-                        "<div class=\"form-group\">" +
-                            "<input type=\"text\" class=\"form-control\" id=\"textInputElement\" placeholder=\"type something here...\">" +
-                        "</div>" +
-                        "<div class=\"form-group\">" +
-                            "<button type=\"button\" class=\"btn btn-primary mb-2\" onclick=\"invokexamarinforms()\">Send to Xamarin.Forms</button>" +
+                            "<div class=\"form-group\">" +
+                                "<button type=\"button\" class=\"btn btn-lg btn-primary btn-block\" onclick=\"invokexamarinforms()\">Send to Xamarin.Forms</button>" +
+                            "</div>" +
                         "</div>" +
                     "</body>" +
 

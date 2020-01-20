@@ -41,12 +41,20 @@
                 BackgroundColor="#2196F3"
                 HasShadow="False"
                 VerticalOptions="End">
-                <Label
-                    x:Name="textFromWebViewLabel"
-                    FontSize="Medium"
-                    Text="Waiting for data from WebView..."
-                    TextColor="White"
-                    VerticalOptions="End" />
+                <StackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        Text="This is a Xamarin.Forms Label!"
+                        TextColor="White"
+                        VerticalOptions="End" />
+                    <Label
+                        x:Name="textFromWebViewLabel"
+                        FontSize="34"
+                        Text="Waiting for data from WebView..."
+                        TextColor="White"
+                        VerticalOptions="End" />
+                </StackLayout>
             </Frame>
 
         </StackLayout>
