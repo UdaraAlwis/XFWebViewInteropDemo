@@ -34,6 +34,7 @@ namespace XFWebViewInteropDemo
                         "<script type=\"text/javascript\">" +
                             "function updatetextonwebview(text) {" +
                             "    document.getElementById(\"textElement\").innerHTML = text;" +
+                            "    document.getElementById(\"spinnerElement\").style.display = 'none';" +
                             "}" +
                             "function invokexamarinforms(){" +
                             "    try{" +
@@ -61,6 +62,9 @@ namespace XFWebViewInteropDemo
 
                         "<div>" +
                             "<h1 style=\"font-size: 2.5rem;\" class=\"display-4\" id=\"textElement\" >Waiting for data from Xamarin.Forms...</h1>" +
+                        "</div>" +
+                        "<div id=\"spinnerElement\"  class=\"spinner-grow\" style=\"width: 3rem; height: 3rem;\" role=\"status\">" +
+                          "<span class=\"sr-only\">Loading...</span>" +
                         "</div>" +
                     "</body>" +
 
