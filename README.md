@@ -17,4 +17,4 @@ Passing data from Javascript to Xamarin.Forms and vise-versa!
 Blog article: https://theconfuzedsourcecode.wordpress.com/2020/01/19/building-a-bi-directional-interop-bridge-with-webview-in-xamarin-forms/
 
 
-<img src="/screenshots/ChatDemoiOS.gif" height="300"/> <img src="/screenshots/ChatDemoiOS.gif" height="300"/> <img src="/screenshots/ChatDemoUWP.gif" height="300"/>
+<img src="/screenshots/ChatDemoiOS.gif" height="300"/> <img src="/screenshots/ChatDemoAndroid.gif" height="300"/> <img src="/screenshots/ChatDemoUWP.gif" height="300"/>
