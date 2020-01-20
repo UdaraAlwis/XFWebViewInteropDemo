@@ -44,7 +44,7 @@
                 <Label
                     x:Name="textFromWebViewLabel"
                     FontSize="Medium"
-                    Text="Waiting for data from WebView..."
+                    Text="Yes! bi-directional! Waiting for data from WebView..."
                     TextColor="White"
                     VerticalOptions="End" />
             </Frame>

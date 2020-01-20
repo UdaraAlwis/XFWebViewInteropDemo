@@ -56,10 +56,10 @@ namespace XFWebViewInteropDemo
                             "</div>" +
                         "</div>" +
                         "<div class=\"form-group\">" +
-                            "<input type=\"text\" class=\"form-control\" id=\"textInputElement\" placeholder=\"type something here...\">" +
+                            "<input type=\"text\" class=\"form-control form-control-lg\" id=\"textInputElement\" placeholder=\"type something here...\">" +
                         "</div>" +
                         "<div class=\"form-group\">" +
-                            "<button type=\"button\" class=\"btn btn-primary mb-2\" onclick=\"invokexamarinforms()\">Send to Xamarin.Forms</button>" +
+                            "<button type=\"button\" class=\"btn btn-lg btn-primary btn-block\" onclick=\"invokexamarinforms()\">Send to Xamarin.Forms</button>" +
                         "</div>" +
                     "</body>" +
 
