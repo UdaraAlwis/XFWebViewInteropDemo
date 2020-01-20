@@ -19,6 +19,8 @@ namespace XFWebViewInteropDemo.UWP.Renderers
 
             if (e.OldElement != null)
             {
+                if (Control == null) return;
+
                 Control.NavigationCompleted -= OnWebViewNavigationCompleted;
                 Control.ScriptNotify -= OnWebViewScriptNotify;
             }

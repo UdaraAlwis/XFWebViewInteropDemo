@@ -18,6 +18,31 @@
                 Text="Uni-directional communication from Xamarin.Forms to WebView interoperability..."
                 VerticalOptions="Start" />
 
+            <controls:HybridWebView
+                x:Name="webViewElement"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand" />
+
+            <Frame
+                BackgroundColor="#2196F3"
+                HasShadow="False"
+                VerticalOptions="End">
+                <StackLayout>
+                    <Label
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        Text="This is a Xamarin.Forms Label!"
+                        TextColor="White"
+                        VerticalOptions="End" />
+                    <Label
+                        x:Name="textFromWebViewLabel"
+                        FontSize="34"
+                        Text="Waiting for data from WebView..."
+                        TextColor="White"
+                        VerticalOptions="End" />
+                </StackLayout>
+            </Frame>
+
             <Entry
                 x:Name="textEntryElement"
                 FontSize="25"
@@ -31,31 +56,6 @@
                 Text="Send to WebView"
                 TextColor="White"
                 VerticalOptions="Start" />
-
-            <controls:HybridWebView
-                x:Name="webViewElement"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand" />
-
-            <Frame
-                BackgroundColor="#2196F3"
-                HasShadow="False"
-                VerticalOptions="End">
-                <StackLayout>
-                    <Label
-                        FontAttributes="Bold"
-                        FontSize="Large"
-                        Text="This is a Xamarin.Forms Label!"
-                        TextColor="White"
-                        VerticalOptions="End" />
-                    <Label
-                        x:Name="textFromWebViewLabel"
-                        FontSize="34"
-                        Text="Waiting for data from WebView..."
-                        TextColor="White"
-                        VerticalOptions="End" />
-                </StackLayout>
-            </Frame>
 
         </StackLayout>
     </ContentPage.Content>

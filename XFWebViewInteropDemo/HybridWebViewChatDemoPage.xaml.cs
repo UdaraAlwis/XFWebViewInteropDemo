@@ -49,8 +49,7 @@ namespace XFWebViewInteropDemo
                     "<body style=\"background-color: #d4ecff;padding: 20px; border: 1px solid #2196F3;border-radius: 5px;\">" +
                         "<div>" +
                             "<p class=\"h4\">This is a HTML Web page!</p>" +
-                            "<h1 style=\"font-size: 2.5rem;\" class=\"display-4\" id=\"textElement\" >Waiting for data from Xamarin.Forms...</h1>" +
-                        "</div>" +
+                        "</div>"+
                         "<div class=\"fixed-bottom\" style=\"padding: 20px;\" >" +
                             "<div class=\"form-group\">" +
                                 "<input type=\"text\" class=\"form-control form-control-lg\" id=\"textInputElement\" placeholder=\"type something here...\">" +
@@ -58,6 +57,10 @@ namespace XFWebViewInteropDemo
                             "<div class=\"form-group\">" +
                                 "<button type=\"button\" class=\"btn btn-lg btn-primary btn-block\" onclick=\"invokexamarinforms()\">Send to Xamarin.Forms</button>" +
                             "</div>" +
+                        "</div>" +
+
+                        "<div>" +
+                            "<h1 style=\"font-size: 2.5rem;\" class=\"display-4\" id=\"textElement\" >Waiting for data from Xamarin.Forms...</h1>" +
                         "</div>" +
                     "</body>" +
 
